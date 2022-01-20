@@ -10,8 +10,8 @@ def make_mat_product(mat_A, mat_B):
     # är multiplicerbara) 
     result = np.zeros([antal_rader, antal_kolonner])
 
-    for i in range(antal_kolonner):
-        for j in range(antal_rader):
+    for i in range(antal_rader):
+        for j in range(antal_kolonner):
             result[i, j] = get_element(mat_A, mat_B, i+1, j+1)
 
     # Processa multiplikationen genom upprepade
